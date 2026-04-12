@@ -1,0 +1,11 @@
+fastapi==0.95.2
+uvicorn
+mangum
+sqlalchemy
+python-dotenv
+python-jose
+google-auth
+google-auth-oauthlib
+requests
+pydantic==1.10.13
+pg8000

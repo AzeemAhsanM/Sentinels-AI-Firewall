@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Sentinels AI Firewall",
+  "version": "1.0.5",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": [
+  "storage",
+  "alarms"
+],
+
+  "externally_connectable": {
+    "matches": [
+      "https://sentinels-p4ks.vercel.app/*"
+    ]
+  },
+
+  "host_permissions": [
+    "https://uwqy2amrvl.execute-api.ap-south-1.amazonaws.com/*",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
