@@ -4,7 +4,7 @@ let sentinelsProcessing = false
 let sentinelsJustSubmitted = false
 let activeEditor = null
 
-const BACKEND_URL = "https://uwqy2amrvl.execute-api.ap-south-1.amazonaws.com/analyze"
+//const BACKEND_URL = "https://uwqy2amrvl.execute-api.ap-south-1.amazonaws.com/analyze"
 
 /* Track active editor */
 function updateActiveEditor() {

@@ -1,4 +1,4 @@
-fetch("https://uwqy2amrvl.execute-api.ap-south-1.amazonaws.com/dashboard")
+{/*fetch("https://uwqy2amrvl.execute-api.ap-south-1.amazonaws.com/dashboard")
 .then(res => res.json())
 .then(data => {
 
@@ -15,4 +15,4 @@ chrome.tabs.create({
 url: "https://sentinels-p4ks.vercel.app/dashboard"
 })
 
-})
+})*/}

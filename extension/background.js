@@ -3,9 +3,9 @@ console.log("🛡 Sentinels background running")
 chrome.runtime.onInstalled.addListener(() => {
   console.log("🛡 Sentinels installed")
 
-  chrome.tabs.create({
-    url: "https://sentinels-p4ks.vercel.app/welcome"
-  })
+  // chrome.tabs.create({
+  //   url: "https://sentinels-p4ks.vercel.app/welcome"
+  // })
 
   chrome.alarms.create("keepAlive", { periodInMinutes: 4 })
 })
